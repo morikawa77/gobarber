@@ -70,6 +70,7 @@ const SignIn: React.FC = () => {
         if (err instanceof Yup.ValidationError) {
           const errors = getValidationErrors(err);
 
+          // eslint-disable-next-line no-console
           console.log(errors);
 
           formRef.current?.setErrors(errors);
@@ -141,6 +142,7 @@ const SignIn: React.FC = () => {
 
             <ForgotPassword
               onPress={() => {
+                // eslint-disable-next-line no-console
                 console.log('abc');
               }}
             >
