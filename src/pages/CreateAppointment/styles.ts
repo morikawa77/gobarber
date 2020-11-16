@@ -50,7 +50,7 @@ export const ProvidersList = styled(FlatList as new () => FlatList<Provider>)`
   padding: 32px 24px;
 `;
 
-export const ProviderContainer = styled(RectButton) <ProviderContainerProps>`
+export const ProviderContainer = styled(RectButton)<ProviderContainerProps>`
   background: ${props => (props.selected ? '#ff9000' : '#3e3b47')};
   flex-direction: row;
   align-items: center;
