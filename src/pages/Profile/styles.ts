@@ -16,11 +16,6 @@ export const Header = styled.View`
   align-items: center;
   margin: 0;
   padding: 0;
-
-  Image {
-    margin: 0;
-    padding: 0;
-  }
 `;
 
 export const BackButton = styled.TouchableOpacity``;
@@ -35,11 +30,23 @@ export const Title = styled.Text`
   margin: 29px 0;
 `;
 
-export const UserAvatarButton = styled.TouchableOpacity``;
+export const UserAvatarButton = styled.TouchableOpacity`
+  position: relative;
+`;
 
 export const UserAvatar = styled.Image`
   width: 186px;
   height: 186px;
   border-radius: 96px;
   margin-bottom: 29px;
+`;
+
+export const UserAvatarIconView = styled.View`
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: '#ff9000';
+  border-radius: 25px;
+  width: 50px;
+  height: 50px;
 `;
