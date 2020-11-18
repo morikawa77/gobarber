@@ -32,21 +32,25 @@ export const Title = styled.Text`
 
 export const UserAvatarButton = styled.TouchableOpacity`
   position: relative;
+  width: 186px;
+  height: 186px;
+  margin-bottom: 29px;
 `;
 
 export const UserAvatar = styled.Image`
   width: 186px;
   height: 186px;
   border-radius: 96px;
-  margin-bottom: 29px;
 `;
 
 export const UserAvatarIconView = styled.View`
   position: absolute;
   right: 0;
   bottom: 0;
-  background: '#ff9000';
+  background: #ff9000;
   border-radius: 25px;
   width: 50px;
   height: 50px;
+  align-items: center;
+  justify-content: center;
 `;

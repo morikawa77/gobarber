@@ -192,7 +192,7 @@ const Profile: React.FC = () => {
             <UserAvatarButton onPress={handleUpdateAvatar}>
               <UserAvatar source={{ uri: user.avatar_url }} />
               <UserAvatarIconView>
-                <Icon name={camera} size={20} color="#312E38" />
+                <Icon name="camera" size={20} color="#312E38" />
               </UserAvatarIconView>
             </UserAvatarButton>
 

@@ -70,9 +70,6 @@ const SignIn: React.FC = () => {
         if (err instanceof Yup.ValidationError) {
           const errors = getValidationErrors(err);
 
-          // eslint-disable-next-line no-console
-          console.log(errors);
-
           formRef.current?.setErrors(errors);
 
           return;
@@ -107,6 +104,7 @@ const SignIn: React.FC = () => {
 
             <Form ref={formRef} onSubmit={handleSignIn}>
               <Input
+                testID="SignInEmail"
                 autoCorrect={false}
                 autoCapitalize="none"
                 keyboardType="email-address"
@@ -120,6 +118,7 @@ const SignIn: React.FC = () => {
               />
 
               <Input
+                testID="SignInPassword"
                 ref={passwordInputRef}
                 name="password"
                 icon="lock"
